@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -15,6 +17,9 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
@@ -44,5 +49,18 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+
+    // Desugaring
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
+
+    // Date time
+    implementation(libs.kotlin.datetime)
+
+    // Hilt
+    implementation(libs.dagger.hilt.android)
+    implementation(libs.dagger.hilt.navigation.compose)
+    kapt(libs.dagger.hilt.android.compiler)
+    kapt(libs.dagger.hilt.compiler)
+
     debugImplementation(libs.compose.ui.tooling)
 }
