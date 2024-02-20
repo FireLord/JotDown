@@ -11,7 +11,7 @@ object DateTimeUtil {
         return Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault())
     }
 
-    fun toEpochMilli(dateTime: LocalDateTime): Long {
+    fun toEpochMillis(dateTime: LocalDateTime): Long {
         return dateTime.toInstant(TimeZone.currentSystemDefault()).toEpochMilliseconds()
     }
 
