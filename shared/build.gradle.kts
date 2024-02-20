@@ -41,6 +41,13 @@ kotlin {
     }
 }
 
+sqldelight {
+    database("JotDownDatabase") {
+        packageName = "com.firelord.jotdown.database"
+        sourceFolders = listOf("sqldelight")
+    }
+}
+
 android {
     namespace = "com.firelord.jotdown"
     compileSdk = 34
