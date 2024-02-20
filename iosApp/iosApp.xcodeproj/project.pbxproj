@@ -331,6 +331,7 @@
 					"$(inherited)",
 					"-framework",
 					shared,
+					"-lsqlite3",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firelord.jotdown.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +369,7 @@
 					"$(inherited)",
 					"-framework",
 					shared,
+					"-lsqlite3",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.firelord.jotdown.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
