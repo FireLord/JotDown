@@ -13,6 +13,7 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		B2A7B27F2B851F4E00B82F53 /* NoteListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B27E2B851F4E00B82F53 /* NoteListScreen.swift */; };
 		B2A7B2812B851F5E00B82F53 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B2802B851F5E00B82F53 /* NoteListViewModel.swift */; };
+		B2A7B2832B851FF600B82F53 /* HideableSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B2822B851FF600B82F53 /* HideableSearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A7B27E2B851F4E00B82F53 /* NoteListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListScreen.swift; sourceTree = "<group>"; };
 		B2A7B2802B851F5E00B82F53 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		B2A7B2822B851FF600B82F53 /* HideableSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideableSearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				B2A7B27E2B851F4E00B82F53 /* NoteListScreen.swift */,
 				B2A7B2802B851F5E00B82F53 /* NoteListViewModel.swift */,
+				B2A7B2822B851FF600B82F53 /* HideableSearchTextField.swift */,
 			);
 			path = note_list;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				B2A7B27F2B851F4E00B82F53 /* NoteListScreen.swift in Sources */,
+				B2A7B2832B851FF600B82F53 /* HideableSearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
