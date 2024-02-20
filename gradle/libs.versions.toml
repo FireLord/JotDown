@@ -7,8 +7,8 @@ compose-material3 = "1.1.2"
 androidx-activityCompose = "1.8.0"
 sqlDelight = "1.5.3"
 dateTime = "0.4.0"
-hilt = "2.42"
-androidx-hilt = "1.0.0"
+hilt = "2.48"
+androidx-hilt = "1.1.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
