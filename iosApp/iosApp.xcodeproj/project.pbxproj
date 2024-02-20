@@ -17,6 +17,7 @@
 		B2A7B2852B8523E400B82F53 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B2842B8523E400B82F53 /* NoteItem.swift */; };
 		B2A7B2872B85265100B82F53 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B2862B85265100B82F53 /* Colors.swift */; };
 		B2A7B28A2B852BCC00B82F53 /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B2892B852BCC00B82F53 /* NoteDetailScreen.swift */; };
+		B2A7B28C2B852FEA00B82F53 /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7B28B2B852FEA00B82F53 /* NoteDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		B2A7B2842B8523E400B82F53 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		B2A7B2862B85265100B82F53 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B2A7B2892B852BCC00B82F53 /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
+		B2A7B28B2B852FEA00B82F53 /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A7B2892B852BCC00B82F53 /* NoteDetailScreen.swift */,
+				B2A7B28B2B852FEA00B82F53 /* NoteDetailViewModel.swift */,
 			);
 			path = note_detail;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				B2A7B28A2B852BCC00B82F53 /* NoteDetailScreen.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				B2A7B2872B85265100B82F53 /* Colors.swift in Sources */,
+				B2A7B28C2B852FEA00B82F53 /* NoteDetailViewModel.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				B2A7B27F2B851F4E00B82F53 /* NoteListScreen.swift in Sources */,
 				B2A7B2832B851FF600B82F53 /* HideableSearchTextField.swift in Sources */,
