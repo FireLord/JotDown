@@ -22,18 +22,20 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 
 @Composable
 fun NoteDetailScreen(
     noteId: Long,
-    viewModel: NoteDetailViewModel = hiltViewModel()
+    viewModel: NoteDetailViewModel = hiltViewModel(),
+    navController: NavController
 ) {
     val state by viewModel.state.collectAsState()
     val hasNoteBeenSaved by viewModel.hasNoteBeenSaved.collectAsState()
 
     LaunchedEffect(key1 = hasNoteBeenSaved) {
         if (hasNoteBeenSaved) {
-            // TODO: Pop backstack
+            navController.popBackStack()
         }
     }
 
@@ -63,7 +65,7 @@ fun NoteDetailScreen(
                 text = state.noteTitle,
                 hint = "Enter a title...",
                 isHintVisible = state.isNoteTitleHintVisible,
-                onValueChanged = viewModel::onNoteContentChanged,
+                onValueChanged = viewModel::onNoteTitleChanged,
                 onFocusChanged = {
                     viewModel.onNoteTitleFocusChanged(it.isFocused)
                 },
