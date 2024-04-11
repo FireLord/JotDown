@@ -11,7 +11,6 @@ import shared
 
 struct NoteItem: View {
     var note: Note
-    var onDeleteClick: () -> Void
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,10 +19,6 @@ struct NoteItem: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                 Spacer()
-                Button(action: onDeleteClick) {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.black)
-                }
             }.padding(.bottom, 3)
             
             Text(note.content)
@@ -49,7 +44,6 @@ struct NoteItem: View {
             title: "My note",
             content: "Note content",
             colorHex: 0xFF2341,
-            created: DateTimeUtil().now()),
-        onDeleteClick: {}
+            created: DateTimeUtil().now())
     )
 }

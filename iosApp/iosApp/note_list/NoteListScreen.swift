@@ -61,11 +61,16 @@ struct NoteListScreen: View {
                         selectedNoteId = note.id?.int64Value
                     }) {
                         NoteItem(
-                            note: note,
-                            onDeleteClick: {
-                                viewModel.deleteNoteById(id: note.id?.int64Value)
-                            }
+                            note: note
                         )
+                    }
+                    .swipeActions {
+                        Button {
+                            viewModel.deleteNoteById(id: note.id?.int64Value)
+                        } label: {
+                            Image(systemName: "xmark.bin")
+                        }
+                        .tint(.red)
                     }
                 }
             }
